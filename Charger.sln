@@ -3,7 +3,18 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Charger", "Charger.csproj", "{6B18813A-9153-4D2D-B9E7-30420FDE5C87}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Charger", "Charger.csproj", "{6B18813A-9153-4D2D-B9E7-30420FDE5C87}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Charger.Test.Unit", "..\Charger.Test.Unit\Charger.Test.Unit.csproj", "{C2015FA7-D73F-4A93-A340-17124C476488}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6B18813A-9153-4D2D-B9E7-30420FDE5C87} = {6B18813A-9153-4D2D-B9E7-30420FDE5C87}
+		{9D70CD3A-CCAA-4430-A6BD-A7038EF56C52} = {9D70CD3A-CCAA-4430-A6BD-A7038EF56C52}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Charger.App.Console", "..\Charger.App.Console\Charger.App.Console.csproj", "{9D70CD3A-CCAA-4430-A6BD-A7038EF56C52}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6B18813A-9153-4D2D-B9E7-30420FDE5C87} = {6B18813A-9153-4D2D-B9E7-30420FDE5C87}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +26,14 @@ Global
 		{6B18813A-9153-4D2D-B9E7-30420FDE5C87}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6B18813A-9153-4D2D-B9E7-30420FDE5C87}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6B18813A-9153-4D2D-B9E7-30420FDE5C87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2015FA7-D73F-4A93-A340-17124C476488}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2015FA7-D73F-4A93-A340-17124C476488}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2015FA7-D73F-4A93-A340-17124C476488}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2015FA7-D73F-4A93-A340-17124C476488}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D70CD3A-CCAA-4430-A6BD-A7038EF56C52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D70CD3A-CCAA-4430-A6BD-A7038EF56C52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D70CD3A-CCAA-4430-A6BD-A7038EF56C52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D70CD3A-CCAA-4430-A6BD-A7038EF56C52}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
